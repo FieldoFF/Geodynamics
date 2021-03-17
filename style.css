@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'SF Compact Display';
+    font-style: normal;
+    font-weight: 200;
+    src: local('SF UI Display Thin'),
+        url('/fonts/sf_ui_display_thin.woff2') format('woff2'),
+        url('/fonts/sf_ui_display_thin.woff') format('woff'),
+        url('/fonts/sf_ui_display_thin.ttf') format('ttf'),
+        url('/fonts/sf_ui_display_thin.eot') format('eot'),
+        url('/fonts/sf_ui_display_thin.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'SF Compact Display';
+    font-style: normal;
+    font-weight: 500;
+    src: local('SF UI Display Medium'),
+        url('/fonts/sf_ui_display_medium.woff2') format('woff2'),
+        url('/fonts/sf_ui_display_medium.woff') format('woff'),
+        url('/fonts/sf_ui_display_medium.ttf') format('ttf'),
+        url('/fonts/sf_ui_display_medium.eot') format('eot'),
+        url('/fonts/sf_ui_display_medium.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'SF Compact Display';
+    font-style: normal;
+    font-weight: 600;
+    src: local('SF UI Display Semibold'),
+        url('/fonts/sf_ui_display_semibold.woff2') format('woff2'),
+        url('/fonts/sf_ui_display_semibold.woff') format('woff'),
+        url('/fonts/sf_ui_display_semibold.ttf') format('ttf'),
+        url('/fonts/sf_ui_display_semibold.eot') format('eot'),
+        url('/fonts/sf_ui_display_semibold.svg') format('svg');
+}
+
+body {
+    font-family: SF Compact Display;
+    background: #020202;
+}
+
+.mob_1 {
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    background-color: #020202;
+    background-image: url(img/volcan\(1\).jpg);
+    background-position-y: 185px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+.logo2_white {
+    height: 40px;
+    width: 160px;
+    margin: 10px 140px 10px 16px;
+}
+
+.menu_but {
+    height: 40px;
+    width: 40px;
+    margin: 10px 15px 10px 0px;
+}
+
+.header {
+    height: 60px;
+    width: 375px;
+    left: 0px;
+    margin-top: 44px;
+    border-radius: 0px;
+}
+
+.text__mob-1 {
+    background: linear-gradient(180deg, #FCF2C1 0%, rgba(241, 123, 82, 0.859413) 83.36%, rgba(234, 39, 3, 0.76) 100%),
+        linear-gradient(0deg, #F58E2F, #F58E2F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    margin: 20px auto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: -0.228706px;
+    margin-top: 71px;
+    height: 330px;
+    width: 312px;
+    margin-left: 33px;
+}
+
+.BUTTON_pos {
+    display: flex;
+    justify-content: center;
+    margin-top: 168px;
+    height: 44px;
+    width: 375px;
+    background-color: #020202;
+}
+
+.BUTTON_CTA {
+    position: relative;
+    left: 0.5%;
+    right: 0.49%;
+    top: 0%;
+    bottom: 0%;
+    height: 44px;
+    width: 327px;
+    border: 1px solid #F9B341;
+    filter: drop-shadow(-2px -4px 20px rgba(255, 255, 255, 0.2)), drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 8px;
+    background-color: #020202;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #FFF38F;
+}
+
+.BUTTON_CTA:active {
+    background: #FFF38F;
+    color: #000614;
+}
+
+.slider {
+    position: absolute;
+    width: 57px;
+    height: 12.5px;
+    margin-left: 159px;
+    margin-top: 37px;
+}
+
+.map-menu-1 {
+    height: 50px;
+    width: 375px;
+    margin: 33px 0px 30px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.map-menu-2 {
+    height: 50px;
+    width: 253.14px;
+    margin: 0px 13.09px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.back__arrow {
+    height: 40px;
+    width: 40px;
+    margin: 5px 54.77px 5px 14px;
+    display: flex;
+    justify-content: center;
+    background-color: #020202;
+}
+
+.back__arrow_btn {
+    display: flex;
+    justify-content: center;
+    background-color: #020202;
+    border: 0;
+}
+
+.back__arrow_img {
+    position: absolute;
+    width: 18.49px;
+    height: 19.47px;
+    margin-left: 10.88px;
+    margin-top: 10.15px;
+    background: linear-gradient(90deg, #FFFFFF 15.32%, rgba(255, 255, 255, 0) 100%), #F9B341;
+}
+
+.filter {
+    width: 40px;
+    margin: 5px 0.09px 5px 0px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    margin: 25.32px 22px 90.68px 24px;
+}
+
+.heading-um {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.228706px;
+    color: #F58E2F;
+}
