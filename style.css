@@ -36,18 +36,15 @@
 
 body {
     font-family: SF Compact Display;
-    background: #020202;
 }
 
-.mob_1 {
-    position: absolute;
-    width: 375px;
+.section {
     height: 812px;
     background-color: #020202;
     background-image: url(img/volcan\(1\).jpg);
     background-position-y: 185px;
+    background-position-x: center;
     background-repeat: no-repeat;
-    background-size: contain;
 }
 
 
@@ -62,17 +59,45 @@ body {
     height: 40px;
     width: 40px;
     margin: 10px 15px 10px 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .header {
     height: 60px;
-    width: 375px;
-    left: 0px;
-    margin-top: 44px;
     border-radius: 0px;
 }
 
-.text__mob-1 {
+.navbar {
+    padding-top: 44px;
+}
+
+.navbar-light .navbar-toggler {
+    position: absolute;
+    right: 15px;
+    border: 0;
+}
+
+.navbar-light .navbar-toggler-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url(img/mobile_menu.png);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #F9B341;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #F9B341;
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: #F9B341;
+}
+
+.text__logo-1 {
     background: linear-gradient(180deg, #FCF2C1 0%, rgba(241, 123, 82, 0.859413) 83.36%, rgba(234, 39, 3, 0.76) 100%),
         linear-gradient(0deg, #F58E2F, #F58E2F);
     -webkit-background-clip: text;
@@ -89,7 +114,10 @@ body {
     margin-top: 71px;
     height: 330px;
     width: 312px;
-    margin-left: 33px;
+}
+
+.text__logo-2 {
+    display: none;
 }
 
 .BUTTON_pos {
@@ -97,14 +125,11 @@ body {
     justify-content: center;
     margin-top: 168px;
     height: 44px;
-    width: 375px;
     background-color: #020202;
 }
 
 .BUTTON_CTA {
     position: relative;
-    left: 0.5%;
-    right: 0.49%;
     top: 0%;
     bottom: 0%;
     height: 44px;
@@ -127,12 +152,15 @@ body {
     color: #000614;
 }
 
-.slider {
-    position: absolute;
-    width: 57px;
+.slider-mob {
     height: 12.5px;
-    margin-left: 159px;
     margin-top: 37px;
+    display: flex;
+    justify-content: center;
+}
+
+.desk {
+    display: none;
 }
 
 .map-menu-1 {
@@ -209,4 +237,119 @@ body {
     line-height: 21px;
     letter-spacing: -0.228706px;
     color: #F58E2F;
+}
+
+@media (min-width: 1024px) {
+
+    .section {
+        height: 1080px;
+        background-color: #020202;
+        background-image: url(img/volcan_desk.png);
+        background-position-y: center;
+        background-position-x: center;
+        background-repeat: no-repeat;
+
+    }
+
+    .header {
+        height: 160px;
+    }
+
+    .container-fluid {
+        padding-left: 0;
+    }
+
+    .logo__desk {
+        width: 160px;
+        padding-left: 61px;
+    }
+
+    .logo2_white {
+        height: 40px;
+        width: 160px;
+        margin: 50px 0px 50px 0px;
+    }
+
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 160px;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        padding-left: 426px;
+    }
+
+    .line {
+        height: 2px;
+        display: flex;
+        justify-content: center;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .nav-item:first-child {
+        padding-left: 7.58px;
+    }
+
+    .nav-item {
+        padding-left: 96.42px;
+    }
+
+    .text__logo-2 {
+        background: linear-gradient(180deg, #FCF2C1 0%, rgba(241, 123, 82, 0.859413) 83.36%, rgba(234, 39, 3, 0.76) 100%),
+            linear-gradient(0deg, #F58E2F, #F58E2F);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #0B2349;
+        display: table;
+        margin: 20px auto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 57px;
+        letter-spacing: -0.228706px;
+        margin-top: 110px;
+        height: 57px;
+        width: 312px;
+    }
+
+    .text__logo-1 {
+        display: none;
+    }
+
+    .BUTTON_pos {
+        margin-top: 525px;
+    }
+
+    .BUTTON_CTA {
+        width: 202px;
+        height: 48px;
+    }
+
+    .mob {
+        display: none;
+    }
+
+    .rectangle {
+        height: 12px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider-desk {
+        margin-top: 18px;
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ellipse {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 }
