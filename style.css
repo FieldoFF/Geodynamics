@@ -75,7 +75,15 @@ body {
 .navbar-light .navbar-toggler {
     position: absolute;
     right: 15px;
+    top: 54px;
     border: 0;
+}
+
+.navbar-collapse {
+    /* flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center; */
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .navbar-light .navbar-toggler-icon {
