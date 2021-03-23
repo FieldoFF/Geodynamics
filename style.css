@@ -50,7 +50,9 @@ body {
 .logo2_white {
     height: 40px;
     width: 160px;
-    margin: 10px 140px 10px 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 16px;
 }
 
 .menu_but {
