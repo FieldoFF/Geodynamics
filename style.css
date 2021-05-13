@@ -121,9 +121,9 @@ body {
         linear-gradient(0deg, #F58E2F, #F58E2F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: table;
-    position: sticky;
-    margin: auto;
+    display: block;
+    position: absolute;
+    left: calc((100% - 312px)/2);
     top: calc((4% * 2) * 2);
     font-style: normal;
     font-weight: 200;
