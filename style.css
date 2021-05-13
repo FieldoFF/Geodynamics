@@ -2,36 +2,39 @@
     font-family: 'SF Compact Display';
     font-style: normal;
     font-weight: 200;
-    src: local('SF UI Display Thin'),
-        url('/fonts/sf_ui_display_thin.woff2') format('woff2'),
-        url('/fonts/sf_ui_display_thin.woff') format('woff'),
-        url('/fonts/sf_ui_display_thin.ttf') format('ttf'),
-        url('/fonts/sf_ui_display_thin.eot') format('eot'),
-        url('/fonts/sf_ui_display_thin.svg') format('svg');
+    src: local('SF Compact Display Thin'),
+        url('/fonts/SF-Compact-Display-Thin.woff2') format('woff2'),
+        url('/fonts/SF-Compact-Display-Thin.woff') format('woff'),
+        url('/fonts/SF-Compact-Display-Thin.ttf') format('ttf'),
+        url('/fonts/SF-Compact-Display-Thin.otf') format('otf'),
+        url('/fonts/SF-Compact-Display-Thin.eot') format('eot'),
+        url('/fonts/SF-Compact-Display-Thin.svg') format('svg');
 }
 
 @font-face {
     font-family: 'SF Compact Display';
     font-style: normal;
     font-weight: 500;
-    src: local('SF UI Display Medium'),
-        url('/fonts/sf_ui_display_medium.woff2') format('woff2'),
-        url('/fonts/sf_ui_display_medium.woff') format('woff'),
-        url('/fonts/sf_ui_display_medium.ttf') format('ttf'),
-        url('/fonts/sf_ui_display_medium.eot') format('eot'),
-        url('/fonts/sf_ui_display_medium.svg') format('svg');
+    src: local('SF Compact Display Medium'),
+        url('/fonts/SF-Compact-Display-Medium.woff2') format('woff2'),
+        url('/fonts/SF-Compact-Display-Medium.woff') format('woff'),
+        url('/fonts/SF-Compact-Display-Medium.ttf') format('ttf'),
+        url('/fonts/SF-Compact-Display-Medium.otf') format('otf'),
+        url('/fonts/SF-Compact-Display-Medium.eot') format('eot'),
+        url('/fonts/SF-Compact-Display-Medium.svg') format('svg');
 }
 
 @font-face {
     font-family: 'SF Compact Display';
     font-style: normal;
     font-weight: 600;
-    src: local('SF UI Display Semibold'),
-        url('/fonts/sf_ui_display_semibold.woff2') format('woff2'),
-        url('/fonts/sf_ui_display_semibold.woff') format('woff'),
-        url('/fonts/sf_ui_display_semibold.ttf') format('ttf'),
-        url('/fonts/sf_ui_display_semibold.eot') format('eot'),
-        url('/fonts/sf_ui_display_semibold.svg') format('svg');
+    src: local('SF Compact Display Semibold'),
+        url('/fonts/SF-Compact-Display-Semibold.woff2') format('woff2'),
+        url('/fonts/SF-Compact-Display-Semibold.woff') format('woff'),
+        url('/fonts/SF-Compact-Display-Semibold.ttf') format('ttf'),
+        url('/fonts/SF-Compact-Display-Semibold.otf') format('otf'),
+        url('/fonts/SF-Compact-Display-Semibold.eot') format('eot'),
+        url('/fonts/SF-Compact-Display-Semibold.svg') format('svg');
 }
 
 body {
@@ -39,10 +42,10 @@ body {
 }
 
 .section {
-    height: 812px;
+    height: 100vh;
     background-color: #020202;
     background-image: url(img/volcan\(1\).jpg);
-    background-position-y: 185px;
+    background-position-y: 65%;
     background-position-x: center;
     background-repeat: no-repeat;
 }
@@ -50,7 +53,6 @@ body {
 .logo2_white {
     height: 40px;
     width: 160px;
-    /* margin: 10px 140px 10px 16px; */
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 16px;
@@ -65,8 +67,8 @@ body {
 }
 
 .header {
-    height: 104px;
-    padding-top: 44px;
+    /* height: 104px; */
+    /* padding-top: 44px; */
     border-radius: 0px;
 }
 
@@ -92,10 +94,6 @@ body {
     height: 40px;
     background-image: url(img/mobile_menu.png);
 }
-
-/* .navbar-expand-lg .navbar-toggler {
-    display: block;
-} */
 
 .navbar-collapse {
     flex-basis: 100%;
@@ -126,14 +124,14 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: table;
-    margin: 20px auto;
+    position: sticky;
+    margin: auto;
+    top: calc((4% * 2) * 2);
     font-style: normal;
     font-weight: 200;
     font-size: 48px;
     line-height: 57px;
     letter-spacing: -0.228706px;
-    margin-top: 71px;
-    height: 330px;
     width: 312px;
 }
 
@@ -142,9 +140,11 @@ body {
 }
 
 .BUTTON_pos {
+    position: absolute;
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 168px;
+    bottom: 10%;
     height: 44px;
     background-color: #020202;
 }
@@ -174,10 +174,13 @@ body {
 }
 
 .slider-mob {
-    height: 12.5px;
-    margin-top: 37px;
+    height: 13px;
+    position: absolute;
+    bottom: 4.5%;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .desk {
@@ -218,7 +221,6 @@ body {
 
 .map-menu-1 {
     height: 50px;
-    /* width: 375px; */
     margin: 33px 0px 30px 0px;
     display: flex;
     flex-direction: row;
@@ -249,7 +251,6 @@ body {
 .back__arrow {
     height: 40px;
     width: 40px;
-    /* margin: 5px 0px 5px 14px; */
     margin-left: 14px;
     display: flex;
     justify-content: center;
@@ -278,8 +279,12 @@ body {
 }
 
 .map {
+    min-width: 320px;
+    min-height: 425px;
     display: flex;
-    justify-content: center;
+    background-image: url(img/map\ 4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .text {
@@ -287,6 +292,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.text_big {
+    display: none;
 }
 
 .heading-um {
@@ -298,6 +307,17 @@ body {
     color: #F58E2F;
     margin: 0px 0px 0px 0px;
     width: 340px;
+}
+
+#triangle {
+    position: relative;
+    width: 13.34px;
+    height: 11.01px;
+    left: 150px;
+    top: -311px;
+    border-bottom: 10px solid #F58E2F;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
 }
 
 @media (min-width: 520px) {
@@ -392,10 +412,6 @@ body {
         width: 100%;
     }
 
-    /* .navbar-expand-lg .navbar-toggler {
-        display: none;
-    } */
-
     .navbar-expand-lg {
         display: block;
     }
@@ -415,12 +431,6 @@ body {
         letter-spacing: -0.228706px;
         color: #F9B341;
     }
-
-    /* .nav-item:focus,
-    .nav-item:hover {
-        border-bottom: 1px solid #F9B341;
-        color: #F9B341;
-    } */
 
     .navbar-light .navbar-nav .nav-link:focus,
     .navbar-light .navbar-nav .nav-link:hover {
@@ -482,4 +492,128 @@ body {
         margin-left: 25px;
         margin-right: 25px;
     }
+
+
+    /* ////////  IMOVA.HTML styles  //////// */
+
+    .map-menu-1 {
+        height: 50px;
+        margin: 33px 0px 30px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .map-menu-2 {
+        height: 50px;
+        width: 253.14px;
+        margin: 0px 13.09px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .heading {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 25px;
+        color: #FFFFFF;
+        width: 200px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .back__arrow {
+        height: 40px;
+        width: 40px;
+        margin-left: 14px;
+        display: flex;
+        justify-content: center;
+        background-color: #020202;
+    }
+
+    .back__arrow_btn {
+        display: flex;
+        justify-content: center;
+        background-color: #020202;
+        border: 0;
+    }
+
+    .back__arrow_img {
+        position: absolute;
+        width: 18.49px;
+        height: 19.47px;
+        margin-left: 10.88px;
+        margin-top: 10.15px;
+        background: linear-gradient(90deg, #FFFFFF 15.32%, rgba(255, 255, 255, 0) 100%), #F9B341;
+    }
+
+    .filter {
+        width: 40px;
+        margin: 5px 14px 5px 0px;
+    }
+
+    .map {
+        width: 100%;
+        min-width: 320px;
+        min-height: 425px;
+        display: flex;
+        background-image: url(img/map\ 4\ \(2\).png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .text {
+        display: none;
+    }
+
+    .text_big {
+        margin: 25.32px 22px 90.68px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 57px;
+    }
+
+    .heading-um {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: -0.228706px;
+        color: #F58E2F;
+        margin: 0px 0px 0px 0px;
+        width: 340px;
+    }
+
+    #triangle {
+        position: relative;
+        width: 13.34px;
+        height: 11.01px;
+        left: 150px;
+        top: -311px;
+        border-bottom: 10px solid #F58E2F;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+    }
+
+    @media (min-width: 520px) {
+        .heading {
+            width: 400px;
+        }
+
+        .heading-um {
+            width: 465px;
+        }
+    }
+
+    /* ////// End fo IMOVA Styles /////////// */
+
+
 }
