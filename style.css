@@ -334,7 +334,6 @@ body {
 @media (min-width: 1024px) {
 
     .section {
-        height: 1080px;
         background-color: #020202;
         background-image: url(img/volcan_desk.png);
         background-position-y: center;
@@ -459,7 +458,7 @@ body {
     }
 
     .BUTTON_pos {
-        margin-top: 525px;
+        bottom: 15%;
     }
 
     .BUTTON_CTA {
@@ -479,7 +478,9 @@ body {
     }
 
     .slider-desk {
-        margin-top: 18px;
+        position: absolute;
+        bottom: 4.5%;
+        width: 100%;
         height: 48px;
         display: flex;
         flex-direction: row;
